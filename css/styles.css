@@ -1,0 +1,78 @@
+body {
+    background-color: #fffaf5;
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6; /* Improves readability for text */
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle depth to the header */
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold; /* Makes links stand out */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: #000;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px; /* Constrains content width for better readability */
+    margin: auto; /* Centers content horizontally */
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    color: #4a4a4a;
+    margin-bottom: 1rem; /* Adds breathing space below headings */
+}
+
+.gallery {
+    /* background-color: #a1887f; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust flexibility to screen size */
+    gap: 20px;
+    padding: 1rem; /* Adds internal spacing around the gallery */
+    align-items: center; 
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom in on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhances focus on hover */
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+}
+
+footer a:hover {
+    color: green;
+}
