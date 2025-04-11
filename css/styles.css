@@ -54,19 +54,17 @@ h1, h2, h3 {
 /* Gallery styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust min width to fit smaller screens */
-    gap: 15px; /* Slightly reduce gap for smaller devices */
-    padding: 1rem;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts flexibly to screen size */
+    gap: 20px; /* Restores space between images */
+    padding: 1rem; /* Adds padding around the gallery */
+    align-items: start; /* Ensures proper alignment */
 }
 
 .gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Makes images fit their grid cell width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Crops image content within grid cell */
+    border-radius: 8px; /* Optional: soft corners */
 }
 
 .gallery img:hover {
