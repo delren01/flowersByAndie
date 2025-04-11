@@ -90,7 +90,7 @@ footer {
     text-align: center;
     font-size: 12px;
     padding: 10px; /* Adds spacing for better readability */
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%; /* Stretches the footer across the screen */
     border-top: 1px solid #ddd; /* Adds a clean divider */
