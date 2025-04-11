@@ -67,6 +67,17 @@ h1, h2, h3 {
     border-radius: 8px;
 }
 
+@media (max-width: 480px) {
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .gallery img {
+        height: 100px;
+    }
+}
+
 .gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -78,10 +89,14 @@ footer {
     text-align: center;
     font-size: 12px;
     padding: 10px; /* Adds spacing for better readability */
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%; /* Stretches the footer across the screen */
     border-top: 1px solid #ddd; /* Adds a clean divider */
+}
+
+footer a {
+    padding: 5px;
 }
 
 footer a:hover {
