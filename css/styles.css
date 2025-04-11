@@ -54,7 +54,7 @@ h1, h2, h3 {
 /* Gallery styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusts flexibly to screen size */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts flexibly to screen size */
     gap: 20px; /* Restores space between images */
     padding: 1rem; /* Adds padding around the gallery */
     align-items: start; /* Ensures proper alignment */
@@ -84,7 +84,6 @@ h1, h2, h3 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer styling */
 footer {
     background-color: #fff;
     text-align: center;
