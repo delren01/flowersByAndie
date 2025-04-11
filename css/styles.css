@@ -69,12 +69,12 @@ h1, h2, h3 {
 
 @media (max-width: 480px) {
     .gallery{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 8px;
     }
 
     .gallery img {
-        height: 80px;
+        height: 100px;
     }
 }
 
