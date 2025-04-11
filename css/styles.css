@@ -61,10 +61,10 @@ h1, h2, h3 {
 }
 
 .gallery img {
-    width: 100%; /* Makes images fit their grid cell width */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Crops image content within grid cell */
-    border-radius: 8px; /* Optional: soft corners */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .gallery img:hover {
