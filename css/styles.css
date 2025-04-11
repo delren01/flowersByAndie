@@ -54,22 +54,22 @@ h1, h2, h3 {
 /* Gallery styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusts flexibly to screen size */
-    gap: 10px; /* Restores space between images */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts flexibly to screen size */
+    gap: 20px; /* Restores space between images */
     padding: 1rem; /* Adds padding around the gallery */
-    /* align-items: start;  */
+    align-items: start; /* Ensures proper alignment */
 }
 
 .gallery img {
-    width: 100%;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
 
 @media (max-width: 480px) {
     .gallery{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
 
