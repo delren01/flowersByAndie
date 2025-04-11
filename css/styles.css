@@ -70,11 +70,11 @@ h1, h2, h3 {
 @media (max-width: 480px) {
     .gallery{
         grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+        gap: 10px;
     }
 
     .gallery img {
-        height: 150px;
+        height: 100px;
     }
 }
 
