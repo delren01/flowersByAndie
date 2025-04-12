@@ -37,6 +37,7 @@ nav a:hover {
 
 /* Main content styling */
 main {
+    /* text-align: center; */
     min-height: calc(100vh - 50px); /* Dynamically adjusts based on footer height */
     padding: 2rem;
     max-width: 1200px; /* Constrain content width */
