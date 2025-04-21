@@ -46,10 +46,65 @@ main {
 }
 
 /* Heading styles */
-h1, h2, h3 {
+h1 {
     font-family: "Playfair Display", serif;
     color: #4a4a4a;
     margin-bottom: 1rem;
+}
+
+.category-preview {
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.category-preview h2 {
+    font-family: "Open Sans", serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #4a4a4a;
+    text-align: left;
+}
+
+.grid-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.category-card {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    padding: 1rem;
+}
+
+.card-text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+.card-text p {
+    font-size: 0.95rem;
+    color: #555;
+    font-family: "Lora", serif;
 }
 
 /* Gallery styling */
@@ -77,6 +132,26 @@ h1, h2, h3 {
 
     .gallery img {
         aspect-ratio: 1 / 1;
+    }
+
+    .category-preview {
+        padding: 1rem 0.5rem;
+    }
+
+    .grid-categories {
+        gap: 12px;
+    }
+
+    .card-text {
+        padding: 0.75rem;
+    }
+
+    .card-text h3 {
+        font-size: 1rem;
+    }
+
+    .card-text p {
+        font-size: 0.85rem;
     }
 }
 
